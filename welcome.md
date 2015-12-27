@@ -15,6 +15,7 @@ This is our baby:
 - No possibility of adding a new Youtube channel without deploying the whole code
 - No API
 - Strange file name
+- no DB, only JSON files
  
 ## YouCode V2
 
