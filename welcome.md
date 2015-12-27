@@ -16,13 +16,14 @@ This is our baby:
 - No API
 - Strange file name
 - no DB, only JSON files
+- No TLS
  
 ## YouCode V2
 
 This is what you can expect from us with V2:
  
-- Based on microservices
-- Using hype things like HTTP/2 or gRPC
+- Based on microservices and Docker
+- Using HTTP/2 or gRPC
 
 Maybe you'll think that some of the items are overpowered for our usecase, we honestly don't care ;-) We want to discover new things through this project.
  
