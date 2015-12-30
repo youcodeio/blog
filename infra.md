@@ -55,7 +55,12 @@ A great overview of CoreOS is available over [here](https://coreos.com/using-cor
 ## Deploy CoreOS on OVH Public Cloud
 ![OVH](https://www.ovh.com/fr/news/logos/with-baseline/logo-ovh-avec-150DPI.png)
 
-We will now deploy 3 instances of our cluster on OVH. Deployment is quite easy, you just need to gain access to Horizon interface by following [this tutorial](https://www.ovh.com/fr/g1773.creer_un_acces_a_horizon). Horizon is the official interface for OpenStack. Download CoreOS image [here](https://coreos.com/os/docs/latest/booting-on-openstack.html), upload it on section Images (container-format is bare and disk-format is isqcow2). During upload, add your SSH key in Security, and change default security to authorize port communication for port 2379, 2380 and 4001. Go into Instances, clic on "Launch instance" and in Post-creation, add [this cloud-config](https://coreos.com/os/docs/latest/booting-on-openstack.html#cloud-config) file (don't forget to change etcd discovery token). 
+We will now deploy 3 instances of our cluster on OVH. Deployment is quite easy, you just need to follow this steps:
+
+- Gain access to Horizon interface by following [this tutorial](https://www.ovh.com/fr/g1773.creer_un_acces_a_horizon). Horizon is the official interface for OpenStack.
+- Download CoreOS image [here](https://coreos.com/os/docs/latest/booting-on-openstack.html), upload it on section Images (container-format is bare and disk-format is isqcow2). 
+- During upload, add your SSH key in Security, and change default security to authorize port communication for port 2379, 2380 and 4001. 
+- Go into Instances, clic on "Launch instance" and in Post-creation, add [this cloud-config](https://coreos.com/os/docs/latest/booting-on-openstack.html#cloud-config) file (don't forget to change etcd discovery token). 
 
 A few minutes later, you'll have your instances running. To check, you can try to see your whole cluster with fleet client. You can install it with something like yaourt or brew. Add FLEETCTL_TUNNEL=one.of.the.ip in your .zshrc/.bashrc and run:
 > $ fleetctl list-machines
