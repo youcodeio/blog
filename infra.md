@@ -96,4 +96,4 @@ Now, we have our proper infrastructure, fully automized, ready to receive our mi
 
 ### About the author
 
-Pierre Zemb is a engineer student in a french engineer school called ISEN Brest and he's working at OVH as a part-time internship. He considers himself as a polyglot developer, with strong interests in golang, infrastructure, APIs, microservices, containers, and other backend stuffs... You can find him on [his website](https://pierrezemb.fr).
+Pierre Zemb is a developer studying in a french engineer school called ISEN Brest. He's also working at OVH as a part-time internship/alternance this year. He has strong interests in golang, infrastructure, APIs, microservices, containers, and other backend stuffs... You can find him on [his website](https://pierrezemb.fr) or [Twitter](https://twitter.com/PierreZ).
