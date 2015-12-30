@@ -88,6 +88,32 @@ Let's start writing our first service for fleet!
 
 ## Deploy high-availabilty services with Fleet
 
+This is what we are going to deploy:
+
+             +------------+--------------+
+                          |
+                          v
+                    +-----+-------+
+                    |             |
+                    |   Node 1    |
+                    |Loadbalancer |
+                    |             |
+                    |             |
+                    +------+------+
+                           |
+     +-------+-------------v-------------+------+
+             |                           |
+    +--------v----------+    +-----------v-------+
+    |                   |    |                   |
+    |   Node 2 with     |    |  Node 3 with      |
+    |   an instance of  |    |  an instance of   |
+    |   our website     |    |  our website      |
+    |                   |    |                   |
+    |                   |    |                   |
+    |                   |    |                   |
+    +-------------------+    +-------------------+
+
+
 // Todo
 
 ## Now what?
